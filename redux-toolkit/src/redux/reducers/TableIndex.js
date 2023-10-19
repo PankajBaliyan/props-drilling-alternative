@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const tableSlice = createSlice({
+  //name: is used in redux extension devTools to filter state
   name: "table",
   initialState: 10,
   reducers: {

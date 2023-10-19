@@ -9,6 +9,7 @@ function PrintTable() {
   const currTableState = useSelector((state) => state.tableIndexHere);
   const handleUpdateValue = (e) => {
     setEnteredValue(e.target.value);
+    // send value to store
     dispatch(tableIndex(e.target.value));
     //if input doesn't have any value
     if (e.target.value === "") {
