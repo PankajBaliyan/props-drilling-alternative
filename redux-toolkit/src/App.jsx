@@ -3,6 +3,7 @@ import "./App.css";
 import { Inc, Dec } from "./redux/reducers/index";
 import { FormIndex } from "./redux/reducers/FormIndex";
 import { useState, useEffect } from "react";
+import PrintTable from "./components/PrintTable";
 
 function App() {
   const currState = useSelector((state) => state.number);
@@ -54,6 +55,7 @@ function App() {
         Update Name
       </button>
       <p>{currFormState}</p>
+      <PrintTable/>
     </>
   );
 }
